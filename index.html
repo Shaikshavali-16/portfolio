@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>P. Shaikshavali | Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #0a192f, #001427);
+      color: #ccd6f6;
+      overflow-x: hidden;
+    }
+
+    /* HEADER */
+    header {
+      text-align: center;
+      padding: 5rem 1rem;
+      background: radial-gradient(circle at top, #112240, #0a192f);
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #64ffda;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    header p {
+      margin: 0.7rem 0;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #64ffda; }
+      to { text-shadow: 0 0 20px #64ffda; }
+    }
+
+    /* NAVBAR */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 1rem;
+      background: rgba(10, 25, 47, 0.95);
+    }
+
+    nav a {
+      color: #64ffda;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* SECTIONS */
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 2.5rem;
+      background: rgba(255,255,255,0.05);
+      border-radius: 15px;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: 0.8s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      color: #64ffda;
+      border-bottom: 2px solid #64ffda;
+      display: inline-block;
+      margin-bottom: 1rem;
+      padding-bottom: 5px;
+    }
+
+    /* PROFILE IMAGE */
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #64ffda;
+      margin: 15px 0;
+    }
+
+    /* SKILLS */
+    .skills span {
+      display: inline-block;
+      margin: 6px;
+      padding: 8px 14px;
+      border-radius: 25px;
+      background: rgba(100,255,218,0.15);
+      color: #64ffda;
+      font-size: 0.95rem;
+    }
+
+    /* HOBBIES */
+    .hobbies-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 1rem;
+    }
+
+    .hobby-card {
+      overflow: hidden;
+      border-radius: 15px;
+    }
+
+    .hobby-card img {
+      width: 100%;
+      display: block;
+      transition: 0.4s ease;
+    }
+
+    .hobby-card img:hover {
+      transform: scale(1.1);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #0d1b2a;
+      color: #64ffda;
+      margin-top: 2rem;
+    }
+
+    /* MOBILE RESPONSIVE */
+    @media (max-width: 768px) {
+
+      header {
+        padding: 3rem 1rem;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      nav a {
+        font-size: 0.9rem;
+      }
+
+      section {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+
+      .profile-img {
+        width: 120px;
+        height: 120px;
+      }
+
+      .skills span {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+      }
+
+      .hobbies-gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <h1>P. Shaikshavali</h1>
+  <p>Computer Science Student | Java Developer</p>
+  <p>📍 Kurnool, India</p>
+</header>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#hobbies">Hobbies</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+
+  <img src="Shaiksha.jpg" alt="Shaikshavali Photo" class="profile-img">
+
+  <p>
+    Enthusiastic Computer Science student with strong interest in
+    software development and Java programming.
+  </p>
+
+  <ul style="margin-top:15px;line-height:1.8;">
+    <li><strong>Languages:</strong> English, Telugu</li>
+    <li><strong>Interest:</strong> Java Developer</li>
+    <li><strong>Current Role:</strong> Student</li>
+  </ul>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <h2>Education</h2>
+
+  <ul>
+    <li>B.Tech CSE – Pullaiah Engineering College (CGPA: 8.3)</li>
+    <li>Intermediate – Narayana Junior College (78%)</li>
+    <li>SSC – Sri Lakshmi High School (98%)</li>
+  </ul>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="skills">
+    <span>Java</span>
+    <span>Python</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>SQL</span>
+    <span>Git</span>
+  </div>
+</section>
+
+<!-- HOBBIES -->
+<section id="hobbies">
+  <h2>Hobbies</h2>
+
+  <div class="hobbies-gallery">
+
+    <div class="hobby-card">
+      <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc">
+    </div>
+
+    <div class="hobby-card">
+      <img src="https://images.unsplash.com/photo-1593766788306-28561086694e">
+    </div>
+
+    <div class="hobby-card">
+      <img src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4">
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <ul>
+    <li>Travels Management System</li>
+    <li>Smart Expenses Management System</li>
+    <li>Portfolio Website</li>
+  </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+
+  <p>Email: shaikshavalisv99@gmail.com</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 P. Shaikshavali
+</footer>
+
+<!-- SCROLL ANIMATION -->
+<script>
+  const sections = document.querySelectorAll("section");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.15 });
+
+  sections.forEach(sec => observer.observe(sec));
+</script>
+
+</body>
+</html>
